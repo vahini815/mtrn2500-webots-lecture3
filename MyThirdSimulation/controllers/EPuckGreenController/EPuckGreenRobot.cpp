@@ -33,6 +33,11 @@ EPuckGreenRobot::EPuckGreenRobot()
      if (k == 'T') {
        // turn right
        turn(); 
+     } else if (k == 'B') {
+       // send message backward
+       sendMessage("Backward"); 
+     } else if (k == 'R') {
+       sendMessage("Roam"); 
      } else {
        roam(); // inheritde from epuckrobot 
      }
